@@ -1,4 +1,4 @@
-##Funkcija koja proverava password
+##Function that checks password
 def strongPass(StrongPassword):
     import re
     hasUpper=re.compile(r'[A-Z]')
@@ -30,6 +30,6 @@ while True:
         strongPass(password)
     elif odgovor=='N':
 ##        exit()
-        break #blaza varijanta od exit()
+        break #better option than exit()
     else:
-        print('Y means YES, N means NO, '+odgovor+' means nothing')
+        print('Y means YES, N means NO, '+odgovor+' means nothing to me!') #protection 
