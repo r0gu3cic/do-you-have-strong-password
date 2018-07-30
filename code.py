@@ -24,12 +24,12 @@ def strongPass(StrongPassword):
         
 while True:
     print('Do you want to check your password strenght? (Y-yes, N-no)')
-    odgovor=input()
-    if odgovor=='Y':
+    answer=input()
+    if answer=='Y':
         password=input('Please insert your password\n')
         strongPass(password)
-    elif odgovor=='N':
+    elif answer=='N':
 ##        exit()
         break #better option than exit()
     else:
-        print('Y means YES, N means NO, '+odgovor+' means nothing to me!') #protection 
+        print('Y means YES, N means NO, '+answer+' means nothing to me!') #protection 
