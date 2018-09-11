@@ -4,7 +4,7 @@ def strongPass(StrongPassword):
     hasUpper=re.compile(r'[A-Z]')
     hasLower=re.compile(r'[a-z]')
     hasDigit=re.compile(r'[0-9]')
-    hasSomethingElse=re.compile(r'[-+!@#$%^&*_.,]') ##(-) se gleda kao od do pa mora na kraju ili na pocetku
+    hasSomethingElse=re.compile(r'[-+!@#$%^&*_.,]')
     para1=hasUpper.search(StrongPassword)
     para2=hasLower.search(StrongPassword)
     para3=hasDigit.search(StrongPassword)
