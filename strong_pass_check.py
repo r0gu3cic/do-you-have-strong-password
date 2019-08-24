@@ -31,5 +31,4 @@ while True:
     elif answer=='N':
         break #better option than exit()
     else:
-        #protection against bad input
-        print('Y means YES, N means NO, '+answer+' means nothing to this python script!')
+        print('Y means YES, N means NO, '+answer+' means nothing to this python script!')#protection against bad input
