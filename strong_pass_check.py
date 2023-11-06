@@ -1,4 +1,6 @@
-###function that checks password criteria
+#!/usr/bin/env python3
+
+# Function that checks password criteria
 def strong_pass(user_password):
     import re
     hasUpper=re.compile(r'[A-Z]')
@@ -18,12 +20,12 @@ def strong_pass(user_password):
     elif para3==None:
         print('Your password dont have digits, you have a weak password')
     elif para4==None:
-        print('Your password dont have characters such as -+!@#$%^&*_.,, you have a weak password')
+        print('Your password dont have special characters such as -+!@#$%^&*_.,, you have a weak password')
     else:
         print('You have a strong password, but you should consider using a long password consisting of multiple words with few typing errors ;)')
 
 while True:
-    print('Do you want to check your password strenght? (Y-yes, N-no)')
+    print('Do you want to check your password strength? (Y-yes, N-no)')
     answer=input()
     if answer=='Y':
         password=input('Please insert your password\n')
